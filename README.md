@@ -32,3 +32,5 @@ Focusly is built on the 52/17 productivity rule, a method validated by researche
 
 For more information, you can view the research summary and discussion by University of Cambridge researcher Dr. Olivia Remes here:
 [How to boost productivity and wellbeing with the 52/17 rule](https://www.linkedin.com/posts/university-of-cambridge_university-of-cambridge-productivity-activity-7384943972936486912-ioxv)
+
+<!-- contribution 1 -->
