@@ -1,5 +1,7 @@
 # Focusly
 
+**Live Demo:** [https://focusly-mnw4-ten.vercel.app](https://focusly-mnw4-ten.vercel.app)
+
 A minimalist workstation designed for deep focus and productivity.
 
 ## Features
@@ -44,3 +46,5 @@ For more information, you can view the research summary and discussion by Univer
 <!-- title integration chore 4 -->
 
 <!-- title integration chore 5 -->
+
+<!-- title integration chore 6 -->
