@@ -5,6 +5,7 @@ import Timer from './components/Timer';
 import TodoList from './components/TodoList';
 import SoundMixer from './components/SoundMixer';
 import logoImg from './assets/penguin.png';
+import bgImg from './assets/background1.jpg';
 
 function App() {
   const [currentTime, setCurrentTime] = useState(new Date());
@@ -46,7 +47,7 @@ function App() {
       <div
         className="fixed inset-0 z-[-1]"
         style={{
-          backgroundImage: "url('./src/assets/background1.jpg')",
+          backgroundImage: `url(${bgImg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
