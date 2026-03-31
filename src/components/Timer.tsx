@@ -49,7 +49,7 @@ const Timer: React.FC = () => {
       <motion.div 
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        className="flex items-center gap-2 md:gap-4 px-2 py-2 rounded-2xl bg-black/20 border border-white/10 backdrop-blur-md z-20"
+        className="flex items-center gap-2 md:gap-4 px-2 py-2 rounded-2xl bg-black/20 border border-white/10 backdrop-blur-md z-20 mt-40 md:mt-0"
       >
         {(Object.keys(MODES) as Mode[]).map((m) => (
           <button

@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Volume2, VolumeX, Calendar } from 'lucide-react';
 import Timer from './components/Timer';
 import TodoList from './components/TodoList';
@@ -66,18 +66,18 @@ function App() {
         <motion.header
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          className="w-full flex justify-between items-center pointer-events-auto"
+          className="w-full flex flex-col xl:flex-row justify-between items-center pointer-events-auto gap-4 xl:gap-0"
         >
-          <div className="flex items-center gap-10">
+          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-10">
             <div className="flex items-center gap-0">
-              <div className="w-[120px] h-auto -mr-2">
+              <div className="w-[80px] sm:w-[120px] h-auto -mr-2">
                 <img src={logoImg} alt="Focusly Logo" className="w-full h-full object-contain" />
               </div>
-              <h1 className="hud-display text-5xl tracking-tighter">Focusly</h1>
+              <h1 className="hud-display text-4xl sm:text-5xl tracking-tighter">Focusly</h1>
             </div>
 
             {/* Global Ambiance Control */}
-            <div className="flex items-center gap-4 bg-black/10 px-6 py-2.5 rounded-full border border-white/5 backdrop-blur-md">
+            <div className="flex items-center gap-4 bg-black/10 px-4 sm:px-6 py-2 sm:py-2.5 rounded-full border border-white/5 backdrop-blur-md">
               <button
                 onClick={() => setIsMuted(!isMuted)}
                 className="hover:scale-110 transition-transform"
@@ -101,8 +101,8 @@ function App() {
             </div>
           </div>
 
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-3 hud-mono text-[10px] bg-black/10 px-5 py-2.5 rounded-full border border-black/5 backdrop-blur-md">
+          <div className="flex flex-col sm:flex-row items-center gap-4">
+            <div className="flex items-center gap-3 hud-mono text-[10px] bg-black/10 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full border border-black/5 backdrop-blur-md">
               <Calendar size={12} className="opacity-60" />
               <span>{dateString}</span>
               <span className="opacity-20 mx-1">|</span>
@@ -110,7 +110,7 @@ function App() {
                 {currentTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false })}
               </span>
             </div>
-            <div className="hud-mono text-[10px] bg-black/20 px-5 py-2.5 rounded-full border border-white/5 backdrop-blur-md">
+            <div className="hidden sm:block hud-mono text-[10px] bg-black/20 px-5 py-2.5 rounded-full border border-white/5 backdrop-blur-md">
               "The forest is quiet for those who listen"
             </div>
           </div>
@@ -151,7 +151,7 @@ function App() {
       </div>
 
       {/* Central Focus Zone */}
-      <main className="fixed inset-0 flex flex-col items-center justify-center z-0">
+      <main className="fixed inset-0 flex flex-col items-center justify-center z-0 pt-48 xl:pt-0">
         <Timer />
       </main>
     </div>
