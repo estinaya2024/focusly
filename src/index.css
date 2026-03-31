@@ -50,7 +50,7 @@
 
   /* HUD Panel: Minimalist & Floating */
   .hud-panel {
-    @apply bg-hud-bg backdrop-blur-[60px] border border-hud-border rounded-3xl transition-all duration-700 overflow-hidden relative shadow-[0_8px_32px_rgba(0, 0, 0, 0.05)];
+    @apply bg-hud-bg backdrop-blur-[60px] border border-hud-border rounded-3xl transition-all duration-700 overflow-hidden relative shadow-[0_8px_32px_rgba(0,0,0,0.05)];
   }
 
   .hud-panel::after {
@@ -61,7 +61,7 @@
   }
 
   .hud-panel:hover {
-    @apply border-black/10 shadow-[0_12px_48px_rgba(0, 0, 0, 0.1)];
+    @apply border-black/10 shadow-[0_12px_48px_rgba(0,0,0,0.1)];
   }
 
   .hud-btn {
