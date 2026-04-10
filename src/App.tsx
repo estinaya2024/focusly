@@ -146,7 +146,7 @@ function App() {
           className="w-full flex justify-center pointer-events-auto"
         >
           <div className="hud-mono text-[8px] bg-black/20 px-6 py-2 rounded-full border border-white/5 backdrop-blur-md opacity-60">
-            Engineered for Deep Work • Focusly Sanctuary 2024
+            Engineered for Deep Work • Focusly Sanctuary 2026
           </div>
         </motion.footer>
       </div>
